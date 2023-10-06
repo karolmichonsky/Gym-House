@@ -17,7 +17,47 @@ body{
 .space-between{
     justify-content: space-between;
 }
+.navbar{
+    width: 100%;
+    height: 9%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+}
+.navbar img{
+    height: 100%;
+    padding: 0 20px;
+}
+.navbar li, a, button{
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #edf0f1;
+    list-style-type: none;
+    margin: 10px 5px;
+    padding: 0px 5px;
+    text-align: center;
+}
+.navbar ul{
+    margin-right: 1em;
+}
+.navbar li{
+    display: inline-block;
+}
+nav{
+    display: block;
+}
 
+.contact{
+    background-color: rgb(177, 37, 43, 1);
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.3s ease 0s;
+}
+.contact:hover{
+    background-color: rgb(177, 37, 43, 0.8);
+}
 #hero{
     width: 100%;
     height: 100vh;
