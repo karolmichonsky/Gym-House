@@ -81,11 +81,38 @@ nav{
 #hero span{
     font-size: 2.5rem;
 }
-#about{
-    background: linear-gradient(#cccccc, #bbbbbb);
-    width: 100%;
-    height: 60vh;
-}
 .logo{
     cursor: pointer;
+}
+.about{
+    background: linear-gradient(#18191A, #242526);
+    width: 100%;
+    padding: 3em 15em 3em 15em;
+    text-align: center;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about img{
+    min-width:40%;
+    max-width: 40%;
+    border-radius: 5%;
+    object-fit: contain;
+}
+.about-text{
+    max-width: 50%
+}
+.about-container{
+    padding-left: 5rem;
+}
+.about-container h1{
+    color: white;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.about-container p{
+    color: #B0B3B8;
+    font-size: 2rem;
+    font-weight: 900;
 }
