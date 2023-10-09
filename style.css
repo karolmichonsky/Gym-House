@@ -23,6 +23,7 @@ body{
     background-color: black;
     position: fixed;
     top: 0;
+    z-index: 99;
 }
 .navbar img{
     height: 100%;
@@ -90,9 +91,6 @@ nav{
     padding: 3em 15em 3em 15em;
     text-align: center;
     height: 60vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     overflow: hidden;
 }
 .about-img{
@@ -131,4 +129,28 @@ nav{
 }
 .about-icons i{
     padding-bottom: 0.5em;
+}
+.trainers{
+    background: #90252b;
+    max-width: 100%;
+    padding: 3em 15em 3em 15em;
+    text-align: center;
+    height: 80vh;
+    overflow: hidden;
+}
+.trainers h1{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.trainers p{
+    font-size: 2rem;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+.trainers-showcase{
+    width: 30%;
+}
+.trainer-section p{
+    color: black;
+    background-color: white;
 }
