@@ -19,14 +19,15 @@ body{
 }
 .navbar{
     width: 100%;
-    height: 9%;
     background-color: black;
+    padding: 10px 5px;
     position: fixed;
     top: 0;
     z-index: 99;
+    overflow: hidden;
 }
 .navbar img{
-    height: 100%;
+    width: 150px;
     padding: 0 20px;
 }
 .navbar li, a, button{
@@ -61,7 +62,7 @@ nav{
 }
 #hero{
     width: 100%;
-    height: 100vh;
+    height: 1080px;
     background: rgba(0, 0, 0, .65) url("hero.jpg");
     background-blend-mode: darken;
     background-position: center;
@@ -87,55 +88,34 @@ nav{
 }
 .about{
     background: #18191A;
-    max-width: 100%;
-    padding: 3em 15em 3em 15em;
-    text-align: center;
-    height: 60vh;
-    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .about-img{
-    min-width:40%;
-    max-width: 40%;
-    object-fit: contain;
+    width: 360px;
     border-radius: 50px;
     background: #1c1d1e;
     box-shadow:  20px 20px 60px #141516,
              -20px -20px 60px #1c1d1e;
 }
 .about-text{
-    max-width: 50%
+    width: 600px;
+    text-align: center;
 }
-.about-container{
-    padding-left: 5rem;
-}
-.about-container h1{
-    color: white;
-    font-size: 3rem;
-    padding-bottom: 2rem;
-}
-.about-container p{
-    color: #B0B3B8;
-    font-size: 2rem;
-    font-weight: 900;
-}
-.about-icons{
-    padding-top:2em;
-    padding-bottom: 2em;
-    font-size: 1.5rem;
-}
-.about-icons-column:nth-child(2){
-    border-left: solid 1px #90252b;
-    border-right: solid 1px #90252b;
-}
-.about-icons i{
-    padding-bottom: 0.5em;
+.about-icons-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
 }
 .trainers{
     background: #90252b;
-    max-width: 100%;
-    padding: 3em 15em 3em 15em;
+    width: 100%;
+    padding: 15px 30px;
     text-align: center;
-    height: 80vh;
     overflow: hidden;
 }
 .trainers h1{
@@ -147,10 +127,24 @@ nav{
     margin-right: 15%;
     margin-left: 15%;
 }
-.trainers-showcase{
-    width: 30%;
+.trainers-row{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
 }
-.trainer-section p{
+.trainer-column{
+    position: relative;
+    width:360px;
+}
+.trainer-column p{
+    padding: 2%;
+    margin: 0;
+    margin-top: -4px;
+    font-size: 2rem;
     color: black;
     background-color: white;
+    border-radius: 40px;
 }
+/* background: #1c1d1e;
+    box-shadow:  20px 20px 60px #141516,
+             -20px -20px 60px #1c1d1e; */
