@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Space+Grotesk:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@ body{
     font-family: 'Roboto', sans-serif;
     color: #edf0f1;
 }
+
 .flex{
     display: flex;
     justify-content: center;
@@ -66,6 +68,9 @@ nav{
     background: rgba(0, 0, 0, .65) url("hero.jpg");
     background-blend-mode: darken;
     background-position: center;
+    overflow: hidden;
+    box-sizing: border-box;
+
 }
 .hero-text{
     font-size: 2em;
@@ -93,9 +98,11 @@ nav{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    overflow: hidden;
+    padding: 4rem 10rem;
 }
 .about-img{
-    width: 360px;
+    width: 550px;
     border-radius: 50px;
     background: #1c1d1e;
     box-shadow:  20px 20px 60px #141516,
@@ -104,30 +111,63 @@ nav{
 .about-text{
     width: 600px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h1{
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+.about-text p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
 }
 .about-icons-section{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    font-size: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.about-icons{
+    width: 200px;
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.about-icons i{
+    padding-bottom: 1rem ;
+}
+.about-icons:nth-child(even){
+    border-left: #90252b solid 1px;
+    border-right: #90252b solid 1px;
 }
 .trainers{
     background: #90252b;
     width: 100%;
-    padding: 15px 30px;
     text-align: center;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem 10rem;
 }
 .trainers h1{
     font-size: 3rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 .trainers p{
     font-size: 2rem;
-    margin-right: 15%;
-    margin-left: 15%;
+    padding: 1rem;
 }
 .trainers-row{
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 50px;
@@ -136,15 +176,50 @@ nav{
     position: relative;
     width:360px;
 }
+.trainer-column{
+    background: url('trainer-background.png');
+    background-size: 100% 100%;
+    object-fit: contain;
+    background-position: center;
+}
 .trainer-column p{
-    padding: 2%;
     margin: 0;
     margin-top: -4px;
     font-size: 2rem;
     color: black;
+    padding-bottom: 1rem;
+}
+.trainers-column-text{
     background-color: white;
     border-radius: 40px;
+    padding-bottom: 1.5rem;
 }
-/* background: #1c1d1e;
-    box-shadow:  20px 20px 60px #141516,
-             -20px -20px 60px #1c1d1e; */
+@media only screen and (max-width: 800px) {
+    .about-text{
+        width: 300px;
+    }
+    .about-text h1{
+        font-size: 3rem;
+        padding: 1rem 0;
+    }
+    .about-text p{
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+    .about-icons-section{
+        width: 300px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 2rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+    .about-icons{
+        width: 100px;
+        padding: 1rem;
+    }
+    .about-icons:nth-child(even){
+        border: none;
+    }
+  }
