@@ -85,12 +85,15 @@
             <div class="bmi-text">
                 <h1>Kalkulator BMI</h1>
                 <p>Kalkulator BMI (Body Mass Index) daje każdemu możliwość szybkiego i wygodego obliczenia własnego wskaźnika masy ciała. BMI obliczamy dzieląc masę ciała (w kilogramach) przez wzrost do kwadratu (w metrach).</p>
+                <div class="bmi-calc-result">
+                    <p class="bmi-result">&nbsp;</p>
+                </div>  
             </div>
             <div class="bmi-form">
                 <form action="" method="post">
-                    <label for="height-id"><p>Podaj swój wzrost:</p></label><input type="number" name="height" id="height-bmi">
-                    <label for="weight-id"><p>Podaj swoją wagę</p></label><input type="number" name="weight" id="weight-bmi"><br><br>
-                    <input type="submit" value="submit-bmi">
+                    <label for="height-id"><p>Podaj swój wzrost:</p></label><input type="number" name="height" id="height-bmi" placeholder="Podaj wzrost">
+                    <label for="weight-id"><p>Podaj swoją wagę</p></label><input type="number" name="weight" id="weight-bmi" placeholder="Podaj wagę    "><br><br>
+                    <input type="button" name="submit-calc" value="Oblicz">
                 </form>
             </div>
         </div>

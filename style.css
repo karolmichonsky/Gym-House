@@ -221,7 +221,6 @@ nav{
 }
 .bmi-calc{
     width: 800px;
-    height: 500px;
     background-color: #1c1d1e;
     border-radius: 20px;
     margin: 3rem 10rem;
@@ -249,12 +248,20 @@ nav{
     background-color: #1c1d1e;
     color:white;
     width: 200px;
-    margin: 10px;
+    margin: 5px;
     padding: 10px;
     font-size: 1.5rem;
     border-radius: 30px;
     border: 3px solid #90252b;
     text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.bmi-calc input[type="button"]{
+    background-color:#90252b;
 }
 .test{
     width: 100%;
