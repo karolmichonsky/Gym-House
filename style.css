@@ -116,7 +116,7 @@ nav{
 }
 .about-img{
     width: 550px;
-    border-radius: 50px;
+    border-radius: 30px;
     background: #1c1d1e;
     box-shadow:  20px 20px 60px #141516,
              -20px -20px 60px #1c1d1e;
@@ -249,6 +249,7 @@ nav{
     color:white;
     width: 200px;
     margin: 5px;
+    margin-bottom: 15px;
     padding: 10px;
     font-size: 1.5rem;
     border-radius: 30px;
@@ -262,6 +263,9 @@ input::-webkit-inner-spin-button {
 }
 .bmi-calc input[type="button"]{
     background-color:#90252b;
+}
+.bmi-result{
+    white-space: pre-line;
 }
 .test{
     width: 100%;
@@ -324,5 +328,8 @@ input::-webkit-inner-spin-button {
     }
     .nav-links.active{
         left: 0;
+    }
+    .bmi-text{
+        width: 250px;
     }
 }
