@@ -281,12 +281,14 @@ input::-webkit-inner-spin-button {
     padding: 2rem 10rem;
 }
 .pricing-table{
+    margin: 2rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 80px;
+    gap: 20px;
 }
 .pricing-content{
+    position: relative;
     width: 360px;
     color: black;
     background-color: rgba(251, 249, 242, 1);
@@ -299,13 +301,16 @@ input::-webkit-inner-spin-button {
     padding: 3rem;
     border: solid 3px silver;
 }
-.pricing-content h1, h2{
+.pricing-content h1{
     padding: 0.2rem;
-    font-size: 3rem;
+    font-size: 2rem;
+}
+.pricing-content h2{
+    font-size: 2rem;
 }
 .pricing-content p{
     padding: 0.2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .greyed-out{
     color: silver;
@@ -325,6 +330,21 @@ input::-webkit-inner-spin-button {
     border-radius: 30px;
     border: 3px solid silver;
     text-align: center;
+}
+.pricing-content::before{
+    background: radial-gradient(
+        800px circle at 100px 100px,
+        rgba(0,0,0,0.16),
+        transparent 40%
+    );
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 2;
 }
 /*---*/
 

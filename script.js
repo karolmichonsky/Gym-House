@@ -43,3 +43,14 @@ function findBodyType(bmi){
     }
     return bmiResults[bmiResults.length-1];
 }
+
+const handleOnMouseMove = pricingGlow => {
+    const { currentTarget: target } = pricingGlow;
+
+    const bound = target.getBoundingClientRect(),
+        x = pricingGlow.clientX - bound.left,
+        y = pricingGlow.clientY - bound.top;
+
+    target.style.setProperty("--mouse-x", '${x}px');
+    target.style.setProperty("--mouse-y", '${y}px');
+}
