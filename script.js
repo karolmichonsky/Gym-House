@@ -44,13 +44,13 @@ function findBodyType(bmi){
     return bmiResults[bmiResults.length-1];
 }
 
-const handleOnMouseMove = pricingGlow => {
-    const { currentTarget: target } = pricingGlow;
-
-    const bound = target.getBoundingClientRect(),
-        x = pricingGlow.clientX - bound.left,
-        y = pricingGlow.clientY - bound.top;
-
-    target.style.setProperty("--mouse-x", '${x}px');
-    target.style.setProperty("--mouse-y", '${y}px');
-}
+document.getElementById("pricing-table").onmousemove = e => {
+    for(const prices of document.getElementsByClassName("prices")) {
+      const rect = prices.getBoundingClientRect(),
+            x = e.clientX - rect.left,
+            y = e.clientY - rect.top;
+  
+            prices.style.setProperty("--mouse-x", `${x}px`);
+            prices.style.setProperty("--mouse-y", `${y}px`);
+    };
+  }
