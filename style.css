@@ -261,17 +261,17 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 .bmi-calc input[type="button"]{
-    background-color:rgb(144, 37, 45);
+    background-color:#90252d;
     transition: all 0.3s ease 0s;
 }
 .bmi-calc input[type="button"]:hover{
-    background-color:rgb(144, 37, 45, 0.8);
+    background-color:#90252dcc;
 }
 .bmi-result{
     white-space: pre-line;
 }
 .pricing{
-    background: white;
+    background-color: #1c1d1e;
     width: 100%;
     text-align: center;
     display: flex;
@@ -293,13 +293,13 @@ input::-webkit-inner-spin-button {
     color: black;
     background-color: rgba(251, 249, 242, 1);
     background-image: linear-gradient(
-        355deg, 
-        rgba(251, 249, 242, 1) 0%, 
-        rgba(255, 255, 255, 1) 
-        50%);
+        103.22deg,
+        #651cb4 -13.86%,
+        #90252d 99.5%
+        );
     border-radius: 30px;
     padding: 3rem;
-    border: solid 3px silver;
+    /* border: solid 3px black */
 }
 .prices h1{
     padding: 0.2rem;
@@ -313,11 +313,7 @@ input::-webkit-inner-spin-button {
     font-size: 1.5rem;
 }
 .greyed-out{
-    color: silver;
-}
-.test{
-    width: 100%;
-    height: 800px;
+    opacity: 0.3;
 }
 .prices input{
     background-color: #1c1d1e;
@@ -328,13 +324,14 @@ input::-webkit-inner-spin-button {
     padding: 10px;
     font-size: 1.5rem;
     border-radius: 30px;
-    border: 3px solid silver;
+    /* border: 3px solid silver; */
+    /* border: inherit; */
     text-align: center;
 }
 .prices::before{
     background: radial-gradient(
-        600px circle at var(--mouse-x) var(--mouse-y),
-        rgba(0,0,0,0.09),
+        300px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255,255,255,0.07),
         transparent 40%
     );
     border-radius: inherit;
