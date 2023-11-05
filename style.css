@@ -343,6 +343,21 @@ input::-webkit-inner-spin-button {
     position: absolute;
     z-index: 2;
 }
+.footer{
+    padding: 5rem 15rem;
+    background: black;
+    font-size: 3rem;
+}
+.footer-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 /*---*/
 
 @media only screen and (max-width: 800px) {
