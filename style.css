@@ -357,10 +357,18 @@ input::-webkit-inner-spin-button {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 3rem;
 }
+.footer-anchor-link{
+    width: 33%;
+}
+
 /*---*/
 
 @media only screen and (max-width: 800px) {
+    .hero-text{
+        background: none;
+    }
     .about-text{
         width: 300px;
     }
@@ -420,5 +428,15 @@ input::-webkit-inner-spin-button {
     }
     .bmi-text{
         width: 250px;
+    }
+    .footer{
+        padding: 2rem 3rem;
+        font-size: 2rem;
+    }
+    .footer-anchor-link{
+        padding-left: 0;
+    }
+    .footer-logo{
+        width: 80%;
     }
 }
