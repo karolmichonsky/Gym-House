@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,17 @@
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/316a07dbfe.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header class="navbar flex space-between">
-        <img class="logo"src="/assets/logo.png" alt="logo">
+        <img class="logo" src="/assets/logo.png" alt="logo">
         <nav>
             <ul class="nav-links">
-                <li class="nav-item"><a  class="nav-link" href="#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">O nas</a></li>
                 <li class="nav-item"><a class="nav-link" href="#trainers">Trenerzy</a></li>
                 <li class="nav-item"><a class="nav-link" href="#prices">Cennik</a></li>
-                <li class="nav-item"><a class="contact nav-link" href="#contact">Kontakt</a></li>    
+                <li class="nav-item"><a class="navbar-contact nav-link" href="#contact">Kontakt</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -35,17 +37,25 @@
         <img class="about-img" src="/assets/about-main.jpg" alt="o nas zdjęcie">
         <div class="about-text">
             <h1>Nasza siłownia</h1>
-            <p>W GymHouse stawiamy na to by każdy czuł się jak w domu. Chcemy by nasza siłownia była bezpiecznym miejscem dla każdego, a trening był najbardziej wyczekiwanym momentem dnia.</p>
+            <p>W GymHouse stawiamy na to by każdy czuł się jak w domu. Chcemy by nasza siłownia była bezpiecznym
+                miejscem dla każdego, a trening był najbardziej wyczekiwanym momentem dnia.</p>
             <div class="about-icons-section">
-                <div class="about-icons"><i class="fa-solid fa-dumbbell fa-xl" style="color: #90252b;"></i><p class="about-icons-section-text">Profesjonalny sprzęt</p></div>
-                <div class="about-icons"><i class="fa-solid fa-brain fa-xl" style="color: #90252b;"></i><p class="about-icons-section-text">Przyjazna atmosfera</p></div>
-                <div class="about-icons"><i class="fa-solid fa-person fa-xl" style="color: #90252b;"></i><p class="about-icons-section-text">Trenerzy personalni</p></div>
+                <div class="about-icons"><i class="fa-solid fa-dumbbell fa-xl" style="color: #90252b;"></i>
+                    <p class="about-icons-section-text">Profesjonalny sprzęt</p>
+                </div>
+                <div class="about-icons"><i class="fa-solid fa-brain fa-xl" style="color: #90252b;"></i>
+                    <p class="about-icons-section-text">Przyjazna atmosfera</p>
+                </div>
+                <div class="about-icons"><i class="fa-solid fa-person fa-xl" style="color: #90252b;"></i>
+                    <p class="about-icons-section-text">Trenerzy personalni</p>
+                </div>
             </div>
-        </div>  
-    </div>      
+        </div>
+    </div>
     <div class="trainers" id="trainers">
         <h1>Trenerzy personalni</h1>
-        <p>Na naszej siłowni pracuje kadra doświadczonych trenerów, którzy chętnie poprowadzą Cię to osiągnięcia wymarzonej sylwetki</p>
+        <p>Na naszej siłowni pracuje kadra doświadczonych trenerów, którzy chętnie poprowadzą Cię to osiągnięcia
+            wymarzonej sylwetki</p>
         <div class="trainers-row flex space-between">
             <div class="trainer-column">
                 <img src="/assets/trainer-maks.png" alt="">
@@ -55,7 +65,7 @@
                     <a><i class="fa-brands fa-facebook fa-xl" style="color: #90252b;"></i></a>
                     <a><i class="fa-brands fa-twitter fa-xl" style="color: #90252b;"></i></a>
                 </div>
-                
+
             </div>
             <div class="trainer-column">
                 <img src="/assets/trainer-natalia.png" alt="">
@@ -65,7 +75,7 @@
                     <a><i class="fa-brands fa-facebook fa-xl" style="color: #90252b;"></i></a>
                     <a><i class="fa-brands fa-twitter fa-xl" style="color: #90252b;"></i></a>
                 </div>
-                
+
             </div>
             <div class="trainer-column">
                 <img src="/assets/trainer-mateusz.png" alt="">
@@ -75,24 +85,31 @@
                     <a><i class="fa-brands fa-facebook fa-xl" style="color: #90252b;"></i></a>
                     <a><i class="fa-brands fa-twitter fa-xl" style="color: #90252b;"></i></a>
                 </div>
-                
+
             </div>
         </div>
-        
+
     </div>
     <div class="bmi">
         <div class="bmi-calc">
             <div class="bmi-text">
                 <h1>Kalkulator BMI</h1>
-                <p>Kalkulator BMI (Body Mass Index) daje każdemu możliwość szybkiego i wygodego obliczenia własnego wskaźnika masy ciała. BMI obliczamy dzieląc masę ciała (w kilogramach) przez wzrost do kwadratu (w metrach).</p>
+                <p>Kalkulator BMI (Body Mass Index) daje każdemu możliwość szybkiego i wygodego obliczenia własnego
+                    wskaźnika masy ciała. BMI obliczamy dzieląc masę ciała (w kilogramach) przez wzrost do kwadratu (w
+                    metrach).</p>
                 <div class="bmi-calc-result">
                     <p class="bmi-result"><br>&nbsp;</p>
-                </div>  
+                </div>
             </div>
             <div class="bmi-form">
                 <form action="" method="post">
-                    <label for="height-id"><p>Podaj swój wzrost</p></label><input type="number" name="height" id="height-bmi" placeholder="Podaj wzrost" min="100" max="250">
-                    <label for="weight-id"><p>Podaj swoją wagę</p></label><input type="number" name="weight" id="weight-bmi" placeholder="Podaj wagę"><br><br>
+                    <label for="height-id">
+                        <p>Podaj swój wzrost</p>
+                    </label><input type="number" name="height" id="height-bmi" placeholder="Podaj wzrost" min="100"
+                        max="250">
+                    <label for="weight-id">
+                        <p>Podaj swoją wagę</p>
+                    </label><input type="number" name="weight" id="weight-bmi" placeholder="Podaj wagę"><br><br>
                     <input type="button" name="submit-calc" value="Oblicz">
                 </form>
             </div>
@@ -138,6 +155,27 @@
             </div>
         </div>
     </div>
+    <div class="contact">
+        <div class="contact-form">
+            <form>
+                <h1>Kontakt</h1>
+                <label for="first-name"><p>Imie</p></label>
+                <input type="text" id="first-name">
+                <label for="surname"><p>Nazwisko</p></label>
+                <input type="text" id="surname">
+                <label for="phone"><p>Telefon</p></label>
+                <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+                <label for="mail"><p>Email</p></label>
+                <input type="email" id="mail"><br>
+                <button>Wyslij</button>
+                
+            </form>
+        </div>
+        <div><iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8619.537289198006!2d21.988760971923217!3d50.03752003164289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cfae3cc14d449%3A0xd2240d31b33eb2ed!2zUnplc3rDs3c!5e0!3m2!1spl!2spl!4v1699477615422!5m2!1spl!2spl"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
     <div class="footer">
         <div class="footer-icons">
             <i class="fa-brands fa-instagram fa-xl footer-icon" style="color: #585858;"></i>
@@ -152,18 +190,19 @@
         </div>
         <div class="footer-links">
             <div class="footer-anchor-link">
-                <a  class="footer-link" href="#hero">Home</a>
-                <a  class="footer-link" href="#hero">Trenerzy</a>
-                <a  class="footer-link" href="#hero">Cennik</a>
+                <a class="footer-link" href="#hero">Home</a>
+                <a class="footer-link" href="#hero">Trenerzy</a>
+                <a class="footer-link" href="#hero">Cennik</a>
             </div>
             <div class="logo-container">
-                <img class="footer-logo"src="/assets/logo.png" alt="logo">
+                <img class="footer-logo" src="/assets/logo.png" alt="logo">
             </div>
             <div class="footer-anchor-link">
-                <a  class="footer-link" href="#hero">O nas</a>
-                <a  class="footer-link" href="#hero">Kontakt</a>
+                <a class="footer-link" href="#hero">O nas</a>
+                <a class="footer-link" href="#hero">Kontakt</a>
             </div>
         </div>
     </div>
 </body>
+
 </html>

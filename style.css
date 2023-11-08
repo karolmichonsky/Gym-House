@@ -51,7 +51,7 @@ body{
 nav{
     display: block;
 }
-.contact{
+.navbar-contact{
     background-color: rgb(177, 37, 43, 1);
     padding: 5px 15px;
     border-radius: 50px;
@@ -72,7 +72,7 @@ nav{
     border-radius: 5px  ;
 }
 
-.contact:hover{
+.navbar-contact:hover{
     background-color: rgb(177, 37, 43, 0.8);
 }
 #hero{
@@ -340,6 +340,16 @@ input::-webkit-inner-spin-button {
     top: 0;
     position: absolute;
     z-index: 2;
+}
+.contact{
+    background: #90252b;
+    padding: 2rem 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.map{
+    border-radius: 20px;
 }
 .footer{
     padding: 5rem 15rem;
