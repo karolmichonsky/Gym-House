@@ -343,11 +343,35 @@ input::-webkit-inner-spin-button {
 }
 .contact{
     background: #90252b;
-    padding: 2rem 10rem;
+    padding: 5rem 20rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
 }
+.contact-form h1{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+.contact-form p{
+    font-size: 1.5rem;
+    padding: 0.3rem 0;
+
+}
+.contact-form input, textarea{
+    margin: 0.5rem 0;
+    height: 40px;
+    width: 400px;
+    border: 3px solid black;
+    color: black;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.contact-form textarea{
+    height: 200px;
+}
+
 .map{
     border-radius: 20px;
 }
@@ -388,6 +412,8 @@ hr{
 }
 
 /*---*/
+
+
 
 @media only screen and (max-width: 800px) {
     .hero-text{
@@ -453,6 +479,9 @@ hr{
     .bmi-text{
         width: 250px;
     }
+    .map{
+        display: none;
+    }
     .footer{
         padding: 2rem 3rem;
         font-size: 2rem;
@@ -469,6 +498,21 @@ hr{
         width: 50%;
     }
     hr{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .map{
+        display: none;
+    }
+    .contact{
+        justify-content: center;
+        padding: 2rem 15rem;
+    }
+    .contact-form input, textarea{
+        width: 300px;
+    }
+    .footer-logo{
         display: none;
     }
 }

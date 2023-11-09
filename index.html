@@ -18,7 +18,7 @@
                 <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">O nas</a></li>
                 <li class="nav-item"><a class="nav-link" href="#trainers">Trenerzy</a></li>
-                <li class="nav-item"><a class="nav-link" href="#prices">Cennik</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pricing">Cennik</a></li>
                 <li class="nav-item"><a class="navbar-contact nav-link" href="#contact">Kontakt</a></li>
             </ul>
             <div class="hamburger">
@@ -104,18 +104,19 @@
             <div class="bmi-form">
                 <form action="" method="post">
                     <label for="height-id">
-                        <p>Podaj swój wzrost</p>
+                        <p id="height-id">Podaj swój wzrost</p>
                     </label><input type="number" name="height" id="height-bmi" placeholder="Podaj wzrost" min="100"
                         max="250">
                     <label for="weight-id">
-                        <p>Podaj swoją wagę</p>
-                    </label><input type="number" name="weight" id="weight-bmi" placeholder="Podaj wagę"><br><br>
+                        <p id="weight-id">Podaj swoją wagę</p>
+                    </label>
+                    <input type="number" name="weight" id="weight-bmi" placeholder="Podaj wagę"><br><br>
                     <input type="button" name="submit-calc" value="Oblicz">
                 </form>
             </div>
         </div>
     </div>
-    <div class="pricing">
+    <div id="pricing" class="pricing">
         <div id="pricing-table">
             <div class="prices">
                 <h1>Standard</h1>
@@ -155,23 +156,21 @@
             </div>
         </div>
     </div>
-    <div class="contact">
+    <div id="contact" class="contact">
         <div class="contact-form">
             <form>
                 <h1>Kontakt</h1>
-                <label for="first-name"><p>Imie</p></label>
-                <input type="text" id="first-name">
-                <label for="surname"><p>Nazwisko</p></label>
-                <input type="text" id="surname">
-                <label for="phone"><p>Telefon</p></label>
-                <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
-                <label for="mail"><p>Email</p></label>
-                <input type="email" id="mail"><br>
-                <button>Wyslij</button>
-                
+                <input type="text" id="first-name" placeholder="Twoje imie">
+                <input type="text" id="surname" placeholder="Twoje nazwisko">
+                <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Twój numer">
+                <input type="email" id="mail" placeholder="twojemail@email.com">
+                <textarea id="contact-input" name="contact-input" cols="52" rows="10"
+                    placeholder="Wiadomość którą chcesz się z nami podzielić"></textarea><br>
+                <!--<button>Wyslij</button>-->
+
             </form>
         </div>
-        <div><iframe class="map"
+        <div class="map-div"><iframe class="map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8619.537289198006!2d21.988760971923217!3d50.03752003164289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cfae3cc14d449%3A0xd2240d31b33eb2ed!2zUnplc3rDs3c!5e0!3m2!1spl!2spl!4v1699477615422!5m2!1spl!2spl"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe></div>
@@ -191,15 +190,15 @@
         <div class="footer-links">
             <div class="footer-anchor-link">
                 <a class="footer-link" href="#hero">Home</a>
-                <a class="footer-link" href="#hero">Trenerzy</a>
-                <a class="footer-link" href="#hero">Cennik</a>
+                <a class="footer-link" href="#trainers">Trenerzy</a>
+                <a class="footer-link" href="#pricing">Cennik</a>
             </div>
             <div class="logo-container">
                 <img class="footer-logo" src="/assets/logo.png" alt="logo">
             </div>
             <div class="footer-anchor-link">
-                <a class="footer-link" href="#hero">O nas</a>
-                <a class="footer-link" href="#hero">Kontakt</a>
+                <a class="footer-link" href="#about">O nas</a>
+                <a class="footer-link" href="#contact">Kontakt</a>
             </div>
         </div>
     </div>
