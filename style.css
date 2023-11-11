@@ -397,6 +397,11 @@ hr{
 .footer-logo{
     width: 80%;
 }
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 .footer-links{
     display: flex;
     justify-content: space-around;
@@ -507,7 +512,7 @@ hr{
     }
     .contact{
         justify-content: center;
-        padding: 2rem 15rem;
+        padding: 2rem 10rem;
     }
     .contact-form input, textarea{
         width: 300px;
